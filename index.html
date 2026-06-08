@@ -115,7 +115,7 @@
   Swinging strikes are among the most decisive events in baseball, directly determining strikeout rates
   and pitching dominance. This paper presents a data-driven pipeline for predicting whether a given
   MLB pitch results in a swinging strike, using over 1.46 million pitches from the 2022–2023 seasons
-  sourced from Baseball Savant's Statcast system. We engineer 45 features spanning pitch physics,
+  sourced from Baseball Savant's Statcast system. We engineer 46 features spanning pitch physics,
   location, count leverage, pitch tunneling, and sequential pitch context, then compare four classifiers:
   Logistic Regression, Random Forest, XGBoost, and a PyTorch Neural Network. Under ROC-AUC,
   the Neural Network achieves the highest discrimination (AUC = 0.760), narrowly edging XGBoost
@@ -143,7 +143,7 @@
 </p>
 <p>
   This project makes three contributions: (1) a fully reproducible Statcast data pipeline covering
-  1.46 million pitches; (2) a rich 45-dimensional feature set including novel pitch tunneling distance
+  1.46 million pitches; (2) a rich 46-dimensional feature set including novel pitch tunneling distance
   and count leverage index features; and (3) a systematic comparison of four model families with
   full evaluation under class-imbalance-appropriate metrics.
 </p>
@@ -238,7 +238,7 @@
 
 <h2>4. Feature Engineering</h2>
 <p>
-  We construct 46 features grouped into seven categories. All features are computed from
+  We construct 46 features grouped into nine categories. All features are computed from
   pitch-level Statcast fields; no external player-level statistics are required.
 </p>
 
